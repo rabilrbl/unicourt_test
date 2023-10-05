@@ -1,0 +1,23 @@
+# for i in expression:
+    #     match i:
+    #         case "(", "[", "{":
+    #             stack.push(i)
+    #         case ")":
+    #             if stack.pop() != "(":
+    #                 return False
+    #         case "]":
+    #             if stack.pop() != "[":
+    #                 return False
+    #         case "}":
+    #             if stack.pop() != "{":
+    #                 return False
+    #         case "+", "-", "/", "*", "%":
+    #             stack.push(i)
+    #         case _:
+    #             if i.isalnum():
+    #                 alnum += i
+    #                 if len(alnum) == 2:
+    #                     popped_val = stack.pop()
+    #                     if not popped_val in "+-/*%":
+    #                         return False
+    #                     alnum = ""
